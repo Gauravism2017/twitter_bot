@@ -1,0 +1,340 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4784601d-bcfe-494f-9355-97479904d1bc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>twitter</Name>
+    <RootNamespace>twitter</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bot\chat.py" />
+    <Compile Include="bot\cleaning\clean.py" />
+    <Compile Include="bot\cleaning\cleaner.py" />
+    <Compile Include="bot\cleaning\config.py" />
+    <Compile Include="bot\cleaning\lookup.py" />
+    <Compile Include="bot\cleaning\test.py" />
+    <Compile Include="bot\cleaning\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\train.py" />
+    <Compile Include="bot\model\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\evaluate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\GreedySearchDecoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\LuongAttentionDecoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\LuongAttn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\EncoderRNN.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\maskedLoss.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\model\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\trimming\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\trimming\prepare_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\trimming\preprocessing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\trimming\trimwords.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bot\trimming\VOC.py" />
+    <Compile Include="bot\trimming\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chat.py" />
+    <Compile Include="retrieve_from_database.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+    <Compile Include="reply.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="schedular.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\api_keys.py" />
+    <Compile Include="src\config.py" />
+    <Compile Include="src\follow.py" />
+    <Compile Include="src\get_tagged_tweets.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\MongoDB.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\msSqL.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\postgres.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\retrieve_trends.py" />
+    <Compile Include="src\retrieve_tweet_hashtag.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\retrieve_tweet_user.py" />
+    <Compile Include="src\__init__.py" />
+    <Compile Include="test.py" />
+    <Compile Include="test_connection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="twitter.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bot\" />
+    <Folder Include="bot\cleaning\" />
+    <Folder Include="bot\model\" />
+    <Folder Include="bot\trimming\" />
+    <Folder Include="chatbot\" />
+    <Folder Include="chatbot\.git\" />
+    <Folder Include="chatbot\.git\hooks\" />
+    <Folder Include="chatbot\.git\info\" />
+    <Folder Include="chatbot\.git\logs\" />
+    <Folder Include="chatbot\.git\logs\refs\" />
+    <Folder Include="chatbot\.git\logs\refs\heads\" />
+    <Folder Include="chatbot\.git\logs\refs\remotes\" />
+    <Folder Include="chatbot\.git\logs\refs\remotes\origin\" />
+    <Folder Include="chatbot\.git\objects\" />
+    <Folder Include="chatbot\.git\objects\00\" />
+    <Folder Include="chatbot\.git\objects\01\" />
+    <Folder Include="chatbot\.git\objects\02\" />
+    <Folder Include="chatbot\.git\objects\07\" />
+    <Folder Include="chatbot\.git\objects\12\" />
+    <Folder Include="chatbot\.git\objects\13\" />
+    <Folder Include="chatbot\.git\objects\14\" />
+    <Folder Include="chatbot\.git\objects\17\" />
+    <Folder Include="chatbot\.git\objects\19\" />
+    <Folder Include="chatbot\.git\objects\1c\" />
+    <Folder Include="chatbot\.git\objects\1e\" />
+    <Folder Include="chatbot\.git\objects\20\" />
+    <Folder Include="chatbot\.git\objects\2b\" />
+    <Folder Include="chatbot\.git\objects\2c\" />
+    <Folder Include="chatbot\.git\objects\2d\" />
+    <Folder Include="chatbot\.git\objects\2e\" />
+    <Folder Include="chatbot\.git\objects\34\" />
+    <Folder Include="chatbot\.git\objects\35\" />
+    <Folder Include="chatbot\.git\objects\38\" />
+    <Folder Include="chatbot\.git\objects\39\" />
+    <Folder Include="chatbot\.git\objects\3f\" />
+    <Folder Include="chatbot\.git\objects\47\" />
+    <Folder Include="chatbot\.git\objects\48\" />
+    <Folder Include="chatbot\.git\objects\4b\" />
+    <Folder Include="chatbot\.git\objects\4d\" />
+    <Folder Include="chatbot\.git\objects\4f\" />
+    <Folder Include="chatbot\.git\objects\50\" />
+    <Folder Include="chatbot\.git\objects\52\" />
+    <Folder Include="chatbot\.git\objects\54\" />
+    <Folder Include="chatbot\.git\objects\58\" />
+    <Folder Include="chatbot\.git\objects\5b\" />
+    <Folder Include="chatbot\.git\objects\62\" />
+    <Folder Include="chatbot\.git\objects\64\" />
+    <Folder Include="chatbot\.git\objects\65\" />
+    <Folder Include="chatbot\.git\objects\69\" />
+    <Folder Include="chatbot\.git\objects\6a\" />
+    <Folder Include="chatbot\.git\objects\6d\" />
+    <Folder Include="chatbot\.git\objects\70\" />
+    <Folder Include="chatbot\.git\objects\76\" />
+    <Folder Include="chatbot\.git\objects\7a\" />
+    <Folder Include="chatbot\.git\objects\7c\" />
+    <Folder Include="chatbot\.git\objects\80\" />
+    <Folder Include="chatbot\.git\objects\82\" />
+    <Folder Include="chatbot\.git\objects\83\" />
+    <Folder Include="chatbot\.git\objects\85\" />
+    <Folder Include="chatbot\.git\objects\87\" />
+    <Folder Include="chatbot\.git\objects\8a\" />
+    <Folder Include="chatbot\.git\objects\8e\" />
+    <Folder Include="chatbot\.git\objects\92\" />
+    <Folder Include="chatbot\.git\objects\98\" />
+    <Folder Include="chatbot\.git\objects\9b\" />
+    <Folder Include="chatbot\.git\objects\9d\" />
+    <Folder Include="chatbot\.git\objects\a2\" />
+    <Folder Include="chatbot\.git\objects\a3\" />
+    <Folder Include="chatbot\.git\objects\a4\" />
+    <Folder Include="chatbot\.git\objects\a5\" />
+    <Folder Include="chatbot\.git\objects\a6\" />
+    <Folder Include="chatbot\.git\objects\b1\" />
+    <Folder Include="chatbot\.git\objects\b4\" />
+    <Folder Include="chatbot\.git\objects\bd\" />
+    <Folder Include="chatbot\.git\objects\be\" />
+    <Folder Include="chatbot\.git\objects\c2\" />
+    <Folder Include="chatbot\.git\objects\c6\" />
+    <Folder Include="chatbot\.git\objects\c7\" />
+    <Folder Include="chatbot\.git\objects\ca\" />
+    <Folder Include="chatbot\.git\objects\cb\" />
+    <Folder Include="chatbot\.git\objects\ce\" />
+    <Folder Include="chatbot\.git\objects\d1\" />
+    <Folder Include="chatbot\.git\objects\d4\" />
+    <Folder Include="chatbot\.git\objects\d6\" />
+    <Folder Include="chatbot\.git\objects\d8\" />
+    <Folder Include="chatbot\.git\objects\e4\" />
+    <Folder Include="chatbot\.git\objects\ea\" />
+    <Folder Include="chatbot\.git\objects\f1\" />
+    <Folder Include="chatbot\.git\objects\f3\" />
+    <Folder Include="chatbot\.git\objects\f6\" />
+    <Folder Include="chatbot\.git\objects\f7\" />
+    <Folder Include="chatbot\.git\objects\fd\" />
+    <Folder Include="chatbot\.git\objects\fe\" />
+    <Folder Include="chatbot\.git\objects\info\" />
+    <Folder Include="chatbot\.git\objects\pack\" />
+    <Folder Include="chatbot\.git\refs\" />
+    <Folder Include="chatbot\.git\refs\heads\" />
+    <Folder Include="chatbot\.git\refs\remotes\" />
+    <Folder Include="chatbot\.git\refs\remotes\origin\" />
+    <Folder Include="chatbot\.git\refs\tags\" />
+    <Folder Include="src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chatbot\.git\config" />
+    <Content Include="chatbot\.git\description" />
+    <Content Include="chatbot\.git\HEAD" />
+    <Content Include="chatbot\.git\hooks\applypatch-msg.sample" />
+    <Content Include="chatbot\.git\hooks\commit-msg.sample" />
+    <Content Include="chatbot\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="chatbot\.git\hooks\post-update.sample" />
+    <Content Include="chatbot\.git\hooks\pre-applypatch.sample" />
+    <Content Include="chatbot\.git\hooks\pre-commit.sample" />
+    <Content Include="chatbot\.git\hooks\pre-push.sample" />
+    <Content Include="chatbot\.git\hooks\pre-rebase.sample" />
+    <Content Include="chatbot\.git\hooks\pre-receive.sample" />
+    <Content Include="chatbot\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="chatbot\.git\hooks\update.sample" />
+    <Content Include="chatbot\.git\index" />
+    <Content Include="chatbot\.git\info\exclude" />
+    <Content Include="chatbot\.git\logs\HEAD" />
+    <Content Include="chatbot\.git\logs\refs\heads\master" />
+    <Content Include="chatbot\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="chatbot\.git\objects\00\642a02b6e4052c51ca7e2727727459402ab44f" />
+    <Content Include="chatbot\.git\objects\01\e04ae7f0edd8da82903bbe7a145373fde44195" />
+    <Content Include="chatbot\.git\objects\02\066c255836a4fb74ec25d4925cf556f7b9a390" />
+    <Content Include="chatbot\.git\objects\07\0996cb2d806967089952783c5d5723af834f11" />
+    <Content Include="chatbot\.git\objects\07\b0098a5ba8b17f9418195f935067b35967d715" />
+    <Content Include="chatbot\.git\objects\12\4578824e55b9d9cd9f19c387c36cf26252b3cb" />
+    <Content Include="chatbot\.git\objects\12\96361c3bc89dbfb406028099b5ce3da1ecd0bf" />
+    <Content Include="chatbot\.git\objects\13\05270558edc9cce473dca77108ae12b19030cb" />
+    <Content Include="chatbot\.git\objects\14\4fe501998bb1bdbb826a402224afd3143ccbd8" />
+    <Content Include="chatbot\.git\objects\17\e991bb1dc26e1d296ac50e1b99c0a6431e5163" />
+    <Content Include="chatbot\.git\objects\19\faaa38afea4a9927db2aeb8298204455c07ef6" />
+    <Content Include="chatbot\.git\objects\1c\59adf1629f542b63d1e4b4ada68ad9b2f5367d" />
+    <Content Include="chatbot\.git\objects\1e\dc8747ddf10eec0813bae52f4e6f5af75c0bc7" />
+    <Content Include="chatbot\.git\objects\20\a1da926a8f983ecead608d3938017cff8d337d" />
+    <Content Include="chatbot\.git\objects\2b\919b74cf5c94b2a85e3fb7284414953fc54bc5" />
+    <Content Include="chatbot\.git\objects\2c\0e0ebf5ea83c6e764222064fe0f7ffdbad5e23" />
+    <Content Include="chatbot\.git\objects\2d\9e6f0da451a5c93be2f0238e77d3ea8baebec5" />
+    <Content Include="chatbot\.git\objects\2d\db8181e36876ffacab5eb082f49b3707e36cef" />
+    <Content Include="chatbot\.git\objects\2e\bf1faddc3080550dca26aef5ab7fc20a702871" />
+    <Content Include="chatbot\.git\objects\34\54c4ba9550884fde8ea8d57c66873b26338c23" />
+    <Content Include="chatbot\.git\objects\35\abedc7254295a9df0b7d3c9200c55d27135841" />
+    <Content Include="chatbot\.git\objects\38\0d784f7e8c74a4c3cf93f5137d48c9799227b6" />
+    <Content Include="chatbot\.git\objects\39\dc9721200a60a6c6fadc85e1829bc2ac020bbc" />
+    <Content Include="chatbot\.git\objects\3f\029696ac6d1773f16c41046f006fa513bd4a0d" />
+    <Content Include="chatbot\.git\objects\47\b58449548646c30ab1864cf3f4eb636ca85da5" />
+    <Content Include="chatbot\.git\objects\48\ee680138d82c419b7e2b668a46ba9c4dd5ec98" />
+    <Content Include="chatbot\.git\objects\4b\186d7d629342e8c4914513647d3e6b7608bb6c" />
+    <Content Include="chatbot\.git\objects\4d\59fe8b943dd3ea21789c70a79775d748f08e70" />
+    <Content Include="chatbot\.git\objects\4f\8ea46e3772d48f55c055fb1e0358866de0a56f" />
+    <Content Include="chatbot\.git\objects\50\15042c52d53fba761fc9821d82aca237b33596" />
+    <Content Include="chatbot\.git\objects\52\1fce8085dd5b6bd955af26816b62f0e3524455" />
+    <Content Include="chatbot\.git\objects\54\1eec5cd30b70898178d0a48a3b537fdde199d9" />
+    <Content Include="chatbot\.git\objects\58\0d9fe835d84701d79e65ed06648b50bb6e0166" />
+    <Content Include="chatbot\.git\objects\5b\5f4f58468300f45400ae1fa29345e6189469c9" />
+    <Content Include="chatbot\.git\objects\62\7c43a9b9d59168d3b5ea5683f90cc1bf20cfd9" />
+    <Content Include="chatbot\.git\objects\64\f1e04e09de21a8103465c9c7f6e4a207bb495b" />
+    <Content Include="chatbot\.git\objects\65\4b5965891566dd3d9e7c6fb81eafd198dc534e" />
+    <Content Include="chatbot\.git\objects\69\308cacc2bc8eb4976a3c9bbd245e10e901e719" />
+    <Content Include="chatbot\.git\objects\6a\84a961ea4d9467c103bc72bc8f184e6336cd65" />
+    <Content Include="chatbot\.git\objects\6d\6a3723790844b88a63ad59e56ca7a8f49a22d0" />
+    <Content Include="chatbot\.git\objects\70\77e41938fab2793d2c1159516cac0d4f73432d" />
+    <Content Include="chatbot\.git\objects\76\bd6b89bf8008a9cbcaed137275e47847d5ef81" />
+    <Content Include="chatbot\.git\objects\7a\27552bf159e45a55c65b8374ae6157cf3e6690" />
+    <Content Include="chatbot\.git\objects\7c\9bd1348b90598e550768e004a29fce03dd36c0" />
+    <Content Include="chatbot\.git\objects\80\50ac40523610c17bb5a6c6820b0a39f68a882d" />
+    <Content Include="chatbot\.git\objects\82\cbb710beaf15da11b60e03f00bdbfd521df754" />
+    <Content Include="chatbot\.git\objects\83\0a51df6a90b5770bbe2b640bce90455227204e" />
+    <Content Include="chatbot\.git\objects\85\ada1c196759fe624ad24a0df4aacab9abb408b" />
+    <Content Include="chatbot\.git\objects\87\a099979e81c497bd2eae734d4e6a15629f5294" />
+    <Content Include="chatbot\.git\objects\8a\d14c53804d4182ddaa7144e45075facaff7e2c" />
+    <Content Include="chatbot\.git\objects\8e\58e0c8ac09d747d6a2feb425697e57e70b32e7" />
+    <Content Include="chatbot\.git\objects\92\d68e603b4b0796c214a08e6e94d7993ad7f66e" />
+    <Content Include="chatbot\.git\objects\98\174aef9e65f26065699ac9b7a18955fbfc6b1a" />
+    <Content Include="chatbot\.git\objects\9b\049e273568a8d982b457bc16ff1e0ef796b432" />
+    <Content Include="chatbot\.git\objects\9b\d41f3001749227594e810680aead6ec7f09d02" />
+    <Content Include="chatbot\.git\objects\9d\b0e943b96cd9d6783099d4228619b74dc239f3" />
+    <Content Include="chatbot\.git\objects\a2\3046ff127d9ac1eddcbb49e7e51505c6582183" />
+    <Content Include="chatbot\.git\objects\a3\14555782400a5b49a38465b811e5934ebe8355" />
+    <Content Include="chatbot\.git\objects\a3\9da084f6bb9ea8012d31280b32b562cbbeffb9" />
+    <Content Include="chatbot\.git\objects\a4\f76e4a4f0599de473dd0acae33b3a58f3ab870" />
+    <Content Include="chatbot\.git\objects\a5\056e426c9d5e267c5ef6952a87b89babcac5e0" />
+    <Content Include="chatbot\.git\objects\a6\0a56eeed8521145ce9395e5c4a9cca9516bb6a" />
+    <Content Include="chatbot\.git\objects\b1\eb35ca8944d421a300b7cf813926afa15a7a97" />
+    <Content Include="chatbot\.git\objects\b4\11ff1c809ab03a6a2afeff91c78aea4e6d0b40" />
+    <Content Include="chatbot\.git\objects\bd\3f6930e8a124d1c432666fc25e9768eecc0a89" />
+    <Content Include="chatbot\.git\objects\be\f710e525ac1c5f5390e4d4e799c182d9e0140a" />
+    <Content Include="chatbot\.git\objects\c2\f2128cb1a81d31ee5a3c50fcba223639d12a45" />
+    <Content Include="chatbot\.git\objects\c6\7760aa750d2ce583276893068f753c18d0f4ab" />
+    <Content Include="chatbot\.git\objects\c7\6a15000302e8082f5306b3b74b562fb3b05434" />
+    <Content Include="chatbot\.git\objects\ca\2b46e6c608f21685f4d12bda666a31a4815ef3" />
+    <Content Include="chatbot\.git\objects\cb\9d17eebfb716f841bfcaae1e28d73b5e3b1673" />
+    <Content Include="chatbot\.git\objects\ce\3819c74a88ee9209de9b1a5902cd45fca22ffb" />
+    <Content Include="chatbot\.git\objects\d1\9584cacdc68e450364d291c20a5b48b022cb93" />
+    <Content Include="chatbot\.git\objects\d4\5c6ee09037b74ddc95987f314e8aae84b1ce0e" />
+    <Content Include="chatbot\.git\objects\d4\78c2203e8b97ceb697b03f4da787edb00c0aa2" />
+    <Content Include="chatbot\.git\objects\d6\aaa560bf7218b9a552b8be2a39147f68df7885" />
+    <Content Include="chatbot\.git\objects\d8\9f4fa07c54075405eddf8df7cba146c5dc0ec3" />
+    <Content Include="chatbot\.git\objects\d8\e2484eb7884f2d096925beb4be61ed6900794e" />
+    <Content Include="chatbot\.git\objects\e4\9df75cdf4c75724090b65096b33778deb0a16d" />
+    <Content Include="chatbot\.git\objects\ea\4e415d54323d5ef6634f299a7316f45fe8ae43" />
+    <Content Include="chatbot\.git\objects\f1\45959cd084e59026d275284facaf429116a88a" />
+    <Content Include="chatbot\.git\objects\f1\90b133f44d205ec72144c0a56a31da81549173" />
+    <Content Include="chatbot\.git\objects\f3\3a12db55fcec6a2d17246b1212b406575d918f" />
+    <Content Include="chatbot\.git\objects\f6\3eda13a91aed89690a1715c98799e204636465" />
+    <Content Include="chatbot\.git\objects\f7\0c413e06e66ca7ab4dc9f2bde90ad9af0fade4" />
+    <Content Include="chatbot\.git\objects\fd\c8c3fee9a4bc663b0d9116dcc1a2611631bf18" />
+    <Content Include="chatbot\.git\objects\fe\63215009c9c3748cb9dd831f397fec8644dac5" />
+    <Content Include="chatbot\.git\packed-refs" />
+    <Content Include="chatbot\.git\refs\heads\master" />
+    <Content Include="chatbot\.git\refs\remotes\origin\HEAD" />
+    <Content Include="scheduler.bat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
